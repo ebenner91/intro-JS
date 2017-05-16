@@ -9,6 +9,13 @@ console.log("test2 count: " + countBs(countTest2));
 var countTest3 = "BBB";
 console.log("test3 count: " + countBs(countTest3));
 
+var countTest4 = "BBBbBbB";
+console.log("test4 count: " + countChar(countTest4, "b"));
+var countTest5 = "ABABABBB";
+console.log("test5 count: " + countChar(countTest5, "A"));
+var countTest6 = "BBB";
+console.log("test6 count: " + countChar(countTest6, "B"));
+
 function FizzBuzz()
 {
     for(var i = 1; i <= 100; i++)
@@ -39,6 +46,21 @@ function countBs(string)
     for( var i = 0; i < string.length; i++)
     {
         if(string.charAt(i) === "B")
+        {
+            count++;
+        }
+    }
+    
+    return count;
+}
+
+function countChar(string, character)
+{
+    var count = 0;
+    
+    for(var i = 0; i < string.length; i++)
+    {
+        if(string.charAt(i) == character)
         {
             count++;
         }
