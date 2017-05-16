@@ -1,3 +1,8 @@
+/*
+ *Elizabeth Benner
+ *Intro to JS Exercise
+ *5/16/17
+ */
 console.log("Introduction to JavaScript");
 
 FizzBuzz();
